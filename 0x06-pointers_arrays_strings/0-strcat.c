@@ -1,47 +1,25 @@
 #include "main.h"
 
-
-
 /**
- * _strcat - conncatinate the values of two integers.
- * @dest: arg a
- * @src: arg b
+ * *_strcat - returns a concanated pointer
+ * @dest: destination
+ * @src: source
  *
- * Return: void.
+ *Return: char pointer
  */
-
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int dest_len, i;
 
-	i = 0;
-
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
-
-
-	j = 0;
-
-
-
-	while (src[j] != '\0')
-
+	for (dest_len = 0; dest[dest_len] != 0; dest_len++)
 	{
 
-		dest[i] = src[j];
-
-		i++;
-
-		j++;
-
 	}
-
-	dest[i] = '\0';
-
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[dest_len + i] = src[i];
+	}
+	dest[dest_len + i] = '\0';
 	return (dest);
-
 }

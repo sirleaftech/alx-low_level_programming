@@ -1,2 +1,1 @@
-
-re pointers, arrays and strings
+pointers in c
