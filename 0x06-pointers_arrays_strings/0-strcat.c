@@ -3,7 +3,6 @@
 
 
 /**
- *
  * _strcat - conncatinate the values of two integers.
  * @dest: arg a
  * @src: arg b
